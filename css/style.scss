@@ -1,0 +1,166 @@
+@import "../js/spectrum";
+@import "font-awesome/font-awesome";
+@import url(//fonts.googleapis.com/css?family=Amatic+SC);
+
+$ctaColor: #528331;
+$br:5px;
+$bs:0 2px 5px rgba(0,0,0,0.5);
+$bss:0 1px 1px rgba(0,0,0,0.75);
+$border:1px solid #aaa;
+$bg: #fff;
+
+body {
+  font:14px Verdana,sans-serif;
+
+  margin:0;
+  padding-top:20px;
+
+  color:white;
+  text-shadow:$bss;
+
+}
+.tc {
+  text-align:center;
+}
+h1,h2 {
+  text-align:center;
+  font-family: "Amatic SC",cursive;
+  font-size:5em;
+  color:white;
+  text-shadow:$bs,$bs;
+  margin:0 0 20px;padding:0;
+}
+
+h2 {
+  font-size:2em;
+}
+a {
+  color: #77d5f4;
+}
+input[type=number] {
+  text-align:right;
+  width:50px;
+}
+input[type=range] {
+  width:80px;
+
+}
+*{box-sizing:border-box;vertical-align: middle;}
+
+@media screen and (min-width:800px) {
+  .settings {
+    width: 300px;
+    float: left;
+    margin-left:25px;
+    margin-right: 25px;
+    position: absolute;
+
+  }
+
+
+  .content {
+    margin-left:350px;
+  }
+}
+
+.wrap {
+  position: relative;
+}
+
+label,div.label {
+  display: block;
+  height:3em;
+  padding:.5em 0;
+
+  > span:first-child {
+    display:inline-block;
+    width:100px;
+  }
+}
+
+
+div.label label {
+  padding:0;
+  height:auto;
+  display:inline-block;
+}
+
+.right-settings {
+  position:absolute;
+  right:0;
+  top:50%;
+
+  margin-top:-1.5em;
+  height:3em;
+  width:80px;
+
+  padding:1em;
+
+  label {
+    padding:0;
+  }
+
+  -webkit-user-select:none;
+  user-select:none;
+}
+.canvas-wrapper {
+  max-width:100%;
+}
+.unifier {
+  position:absolute;
+  left:0;bottom:0;top:0;width:5px;
+  border:$border;
+  border-left:0;
+}
+#output {
+  width:100%;
+  min-width:100%;max-width:100%;
+  height:200px;
+  background:#555;
+  color:#eee;
+  text-shadow:0 1px 0 #111;
+  padding:.5em;
+
+  font:.9em 'Lucida Console',Andale Mono,monospace;
+  line-height:1;
+}
+fieldset {
+  background:$bg;
+  border-radius:$br;
+  border:$border;
+  border-radius:$br;
+  box-shadow:$bs;
+  display: block;
+  margin:0 0 36px;
+  color:#342;
+  text-shadow:none;
+  max-width:100%;
+}
+
+legend {
+  margin:0;
+  padding:5px 10px;
+  border-radius:$br $br 0 0;
+  background:$bg;
+  border:$border;
+  border-bottom:none;
+  position:relative;
+  top:-14px;
+}
+
+button {
+  display:block;
+  width:100%;
+  padding:10px;
+  border:none;
+  cursor:pointer;
+
+  border-radius:$br;
+}
+
+.cta {
+  background:linear-gradient(to bottom,lighten($ctaColor,10%) 0, darken($ctaColor,10%) 100%);
+  color:white;
+  font-weight:bold;
+}
+
